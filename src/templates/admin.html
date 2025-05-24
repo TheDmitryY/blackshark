@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin panel</title>
-</head>
-<body>
-    <h1>Привет, {{ name }}!</h1>
-</body>
-</html>
+    <html>
+    <head>
+        <title>Кнопки и FastAPI</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Управление сервером через кнопки</h1>
+        <button onclick="sendRequest('button1')">Ввимкнення ПК</button>
+        <button onclick="sendRequest('button2')">Ввимкнення Roblox</button>
+        <button onclick="sendRequest('action3')">Перезапуск роутера (Поки недоступно)</button>
+        <div id="response"></div>
+        <script src="/static/script.js"></script>
+    </body>
+    </html>
