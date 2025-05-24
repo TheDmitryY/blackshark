@@ -38,9 +38,9 @@ async def handle_button_click(request: ButtonRequest):
       else:
             return {"message": "Виникла помилка спробуйте ще раз!"}
     elif request.button_id == "action3":
-        return {"message": "Сервер: Запущено действие 3!"}
+        return {"message": "Функція в розробці!"}
     else:
-        raise HTTPException(status_code=400, detail="Неизвестная кнопка")
+        raise HTTPException(status_code=400, detail="Незрозуміла кнопка")
 
 if __name__ == "__main__":
     os.system("fastapi run main.py")

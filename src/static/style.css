@@ -31,3 +31,11 @@ button:hover {
 h1{
     color: #ddd;
 }
+
+a{
+    color: #ddd;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 3fr auto;
+    margin-top: 670px;
+}
